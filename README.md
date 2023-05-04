@@ -1,1 +1,1 @@
-# the-dog-maze
+# Ping-Pong-Game
