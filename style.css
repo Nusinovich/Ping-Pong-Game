@@ -1,0 +1,34 @@
+*{
+    border: 1px red solid;
+}
+
+h1{
+    font-family: 'Bruno Ace', cursive;
+    text-decoration: underline;
+}
+
+body {
+    text-align: center;
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+}
+
+ul li {
+    text-align: left;
+}
+
+#gameRules{
+    margin-top: 35px;
+    font-family: 'Bruno Ace', cursive;
+
+}
+
+h2{
+    text-decoration: underline;
+}
