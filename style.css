@@ -1,10 +1,9 @@
-*{
-    border: 1px red solid;
-}
+
 
 h1{
     font-family: 'Bruno Ace', cursive;
     text-decoration: underline;
+    color: white
 }
 
 body {
@@ -15,20 +14,29 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    position: fixed;
+    position:fixed
     width: 100%;
+    background-image: url(pong_image.jpg);
+    background-size: 1870px;
+ 
 }
 
 ul li {
     text-align: left;
+    
 }
 
 #gameRules{
     margin-top: 35px;
     font-family: 'Bruno Ace', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(255, 247, 247)
+    
 
 }
 
 h2{
     text-decoration: underline;
 }
+
