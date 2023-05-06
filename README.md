@@ -19,13 +19,14 @@ Below, you will be able to find the rules in more detail:
 5. To be champion, you will need to win all 5 levels.
 6. Remember to have fun!!!
 
-# MVP Criteria
+# MVP Criteria and Planning
 
 1. Create Organize, and clean HTML page with game rules and a Nice background.
 2. The player needs to play with AI.
-3. The game should have multiple rounds, and each round should have X points.
-4. The users should be able to play with their computer keyboard.
-5. The game should be simple and fun.
+3. Game board should include: ball, 2 paddles, Net, score counter for the player and AI, and round number. | 
+4. The game should have multiple rounds, and each round should have X points.
+5. The users should be able to play with their computer keyboard.
+6. The game should be simple and fun.
 
 # Post-MVP goals
 
@@ -39,9 +40,18 @@ Below, you will be able to find the rules in more detail:
 
 | Date | Goals |
 | ---- | ----- |
-| Mon. 5/1 | Discuss project guidelines and resources; create repo and README.md for the project. |
-| Wed. 5/3 | Work day in class; make sure to have a repo with basic README.md finished. |     
-| Sat. 5/6 | Work day in class     |
-| Mon. 5/8 | Work day in class; make sure your project is deployed.      |
-| Wed. 5/10 | Your project should be deployed and your game should work according to
+| Mon. 5/1 | Project Planing and project setup (GIT REPO, HTML, CSS, and JS). |
+| Wed. 5/3 | Work on HTML code, CSS code, and test the code. |
+| Thu. 5/4 | Work on the JAVA SCRIPT code. |
+| Fri. 5/5 | Work on the JAVA SCRIPT code. |
+| Sat. 5/6 | Work on the JAVA SCRIPT code. |
+| Mon. 5/8 | Complete JAVA SCRIPT code, start testing, and deploy the code to GITHUB. |
+| Wed. 5/10 | Final fixes, code review, testing and final deployment. |
+| Sat. 5/13 | Submit completed project. |
 
+# Resources
+
+| Category | Note |
+| ---- | ----- |
+| Font Libary | https://fonts.google.com/specimen/Bruno+Ace |
+| image | https://www.pexels.com/search/pingpong/  (by Andrea Piacquadio) |
