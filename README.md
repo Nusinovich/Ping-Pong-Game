@@ -55,3 +55,4 @@ Below, you will be able to find the rules in more detail:
 | ---- | ----- |
 | Font Libary | https://fonts.google.com/specimen/Bruno+Ace |
 | image | https://www.pexels.com/search/pingpong/  (by Andrea Piacquadio) |
+| Support | Thank you the Pavani Ponala (my co-worker) for the support |
