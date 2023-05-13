@@ -2,7 +2,7 @@
 let rounds = [5, 5, 5, 5, 5];
 let colors = ['#ba4545', '#ce3131', '#e21d1d', '#ff0000', '#4e0000' ];
  
-
+// Drawing the ball
 let Ball = {
     new: function (incrementedSpeed) {
         return {
@@ -17,7 +17,7 @@ let Ball = {
     }
 };
  
-
+// drawing the paddel
 let Ai = {
     new: function (side) {
         return {
@@ -32,7 +32,7 @@ let Ai = {
     }
 };
  
-
+// game area
 let Game = {
     initialize: function () {
         this.canvas = document.querySelector('canvas');
@@ -81,7 +81,7 @@ let Game = {
     },
 
     
- 
+    // Ruuning all the pbjects
     update: function () {
         if (!this.over) {
             if (this.ball.x <= 0) Pong._resetTurn.call(this, this.ai, this.player);
@@ -137,6 +137,7 @@ let Game = {
             }
         }
 
+        //check who won the game
         if (this.player.score === rounds[this.round]) {
             if (!rounds[this.round + 1]) {
                 this.over = true;
@@ -157,7 +158,7 @@ let Game = {
         }
     },
  
-
+    // Draw the objects to the game.
     draw: function () {
         this.context.clearRect(
             0,
@@ -201,8 +202,8 @@ let Game = {
         }
  
         this.context.beginPath();
-        this.context.setLineDash([7, 15]);
-        this.context.moveTo((this.canvas.width / 2), this.canvas.height - 140);
+        this.context.setLineDash([7, 1]);
+        this.context.moveTo((this.canvas.width / 2), this.canvas.height - 100);
         this.context.lineTo((this.canvas.width / 2), 140);
         this.context.lineWidth = 10;
         this.context.strokeStyle = '#ffffff';
@@ -223,7 +224,7 @@ let Game = {
             200
         );
  
-        this.context.font = '30px Courier New';
+        this.context.font = '40px Courier New';
  
         this.context.fillText(
             'Round ' + (Pong.round + 1),
@@ -252,11 +253,9 @@ let Game = {
                 Pong.running = true;
                 window.requestAnimationFrame(Pong.loop);
             }
- 
-            // code for up arrow events
+
             if (key.keyCode === 38) Pong.player.move = DIRECTION.UP;
  
-            // code for down arrow events
             if (key.keyCode === 40) Pong.player.move = DIRECTION.DOWN;
         });
  
@@ -265,6 +264,7 @@ let Game = {
         
     },
  
+    //end of round transition
     endGameMenu: function (text) {
         Pong.context.font = '45px Courier New';
         Pong.context.fillStyle = this.color;
@@ -317,10 +317,12 @@ let Game = {
         victor.score++;
     },
  
+    
     _turnDelayIsOver: function() {
         return ((new Date()).getTime() - this.timer >= 1000);
     },
  
+    //random color as the background of each level.
     _generateRoundColor: function () {
         let newColor = colors[Math.floor(Math.random() * colors.length)];
         if (newColor === this.color) return Pong._generateRoundColor();
