@@ -74,7 +74,7 @@ let Game = {
  
         this.context.fillStyle = '#ffffff';
  
-        this.context.fillText('Press any key to begin',
+        this.context.fillText('Press arrow key to begin',
             this.canvas.width / 2,
             this.canvas.height / 2 + 15
         );
@@ -153,7 +153,7 @@ let Game = {
         }
         else if (this.ai.score === rounds[this.round]) {
             this.over = true;
-            setTimeout(function () { Pong.endGameMenu('AI WON, TRY AG!'); }, 1000);
+            setTimeout(function () { Pong.endGameMenu('AI WON, TRY AGAIN!'); }, 1000);
         }
     },
  
@@ -303,7 +303,7 @@ let Game = {
  
         this.context.fillStyle = '#ffffff';
  
-        this.context.fillText('Press any key to Start',
+        this.context.fillText('Press arrow key to Start',
             this.canvas.width / 2,
             this.canvas.height / 2 + 15
         );
