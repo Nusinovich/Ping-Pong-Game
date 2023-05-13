@@ -202,7 +202,7 @@ let Game = {
         }
  
         this.context.beginPath();
-        this.context.setLineDash([7, 1]);
+        this.context.setLineDash([7, 2]);
         this.context.moveTo((this.canvas.width / 2), this.canvas.height - 100);
         this.context.lineTo((this.canvas.width / 2), 140);
         this.context.lineWidth = 10;
